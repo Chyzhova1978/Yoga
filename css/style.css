@@ -34,7 +34,6 @@ body {
    max-width: 1230px;
    padding-inline: 15px;
    margin-inline: auto;
-   /* padding-inline: clamp(15px, 3vw, 100px); */
 }
 
 .title {
@@ -66,12 +65,10 @@ body {
 }
 
 /* header */
-
 .header {
    position: sticky;
    top: 0;
    z-index: 1;
-   /* position: fixed; */
    width: 100%;
    top: 0;
    left: 0;
@@ -117,7 +114,6 @@ body {
 }
 
 /* section hero */
-
 .hero {
    padding-top: 103px;
 }
@@ -156,6 +152,7 @@ body {
    border-radius: 33px;
    overflow: hidden;
 }
+
 .hero__picture img {
    max-width: none;
    width: 402px;
@@ -165,7 +162,6 @@ body {
 }
 
 /* section anytime */
-
 .anytime__body {
    display: flex;
    justify-content: space-between;
@@ -216,7 +212,6 @@ body {
 }
 
 /* section lessons */
-
 .lessons__body {
    display: flex;
    flex-direction: column;
@@ -229,7 +224,6 @@ body {
 
 .lessons__text {
    max-width: 840px;
-   /* margin-bottom: 64px; */
 }
 
 .text {
@@ -274,7 +268,6 @@ body {
 
 .schedule__text {
    max-width: 839px;
-   /* margin-bottom: 41px; */
 }
 
 .schedule__content {
@@ -328,7 +321,6 @@ body {
 }
 
 /* section community */
-
 .community-section__container {
    display: flex;
    flex-wrap: nowrap;
@@ -383,7 +375,6 @@ body {
 }
 
 .community-section__grid-column {
-   /* position: absolute; */
    display: flex;
    flex-direction: column;
    gap: 47px;
@@ -427,16 +418,7 @@ body {
    min-width: calc(296px + 296px + 138px);
 }
 
-
-
-/* @media (min-width: 993px) {
-   .community-section__aside {
-      min-width: calc(296px + 296px + 138px);
-   }
-} */
-
 /* section prices */
-
 .prices__title {
    margin-bottom: 27px;
 }
@@ -484,13 +466,13 @@ body {
    padding: 14px 64px;
    font-weight: 500;
 }
+
 .price-card__button:hover {
    background-color: #fff;
    color: #888;
 }
 
 /* section yoga instructors */
-
 .yoga-instructors {
    overflow: hidden;
 }
@@ -562,7 +544,6 @@ body {
 }
 
 /* section trial */
-
 .trial-section__container {
    display: flex;
    justify-content: space-between;
@@ -595,7 +576,6 @@ body {
 .trial-form__input {
    width: 100%;
    border-bottom: 1px solid #ba936f;   
-   /* color: #343434; */
    background-color: transparent;
 }
 
@@ -638,7 +618,6 @@ body {
 }
 
 /* section instagram */
-
 .instagram-section__title {
    margin-bottom: 34px;
    line-height: normal;
@@ -666,10 +645,6 @@ body {
    display: grid;
    grid-template-columns: repeat(4, 1fr); 
    gap: 21px 35px; 
-   /* display: flex;
-   flex-wrap: wrap;
-   column-gap: 35px;
-   row-gap: 21px; */
 }
 
 .instagram-gallery__item {
@@ -705,7 +680,6 @@ body {
 }
 
 /* footer */
-
 .footer {
    padding: 59px 0 12px;
    background-color: #fdefe6;
@@ -760,10 +734,9 @@ body {
    line-height: normal;
 }
 
-@media (width <= 1199px) {
-}
-
  @media (width <= 992px) {
+
+/* header */
    .menu__list {
       gap: 15px;
    }
@@ -857,7 +830,6 @@ body {
    .schedule__picture {
       flex-basis: auto;
       width: 100%;
-
    }
    .schedule__img {
       width: 100%;
@@ -1096,6 +1068,8 @@ body {
    }
 } 
 @media (width < 768px) {
+
+/* header */
    .icon-menu {
       display: block;
       width: 30px;
@@ -1179,10 +1153,7 @@ body {
    .header__button {
       order: 2;
    }
-   /* .button {
-      align-self: stretch;
-   } */
-
+  
 /* section hero */
    .hero {
       padding-top: 30px;
@@ -1312,7 +1283,6 @@ body {
    }
    .price-card {
       width: 100%;
-      /* max-width: 420px; */
       margin: 0 auto;
       padding: 36px 22px;
    }
@@ -1386,6 +1356,7 @@ body {
       grid-template-columns: 1fr;
       gap: 12px;
    }
+
 /* footer */
    .footer {
       padding: 50px 0 26px;
@@ -1422,4 +1393,113 @@ body {
       margin-top: 26px;
       font-size: 14px;
    }
-} 
+}
+
+@media (width <= 430px) {
+/* section schedule */
+   .schedule__body {
+      row-gap: 28px;
+   }
+   .schedule__title {
+      font-size: 22px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+   }
+   .schedule__text {
+      font-size: 15px;
+      line-height: 1.5;
+   }
+   .schedule__content {
+      gap: 22px;
+   }
+   .table__row {
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 8px;
+      padding: 14px 0;
+      font-size: 13px;
+      line-height: 1.45;
+   }
+   .table__day {
+      flex-basis: auto;
+      flex-shrink: 0;
+      font-size: 14px;
+   }
+   .table__lesson {
+      width: 100%;
+   }
+   .table__link::after {
+      top: -2px;
+      right: -14px;
+   }
+
+/* section community-section */
+   .community-section__container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+   }
+   .community-section__aside {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-top: 0;
+      min-width: 0;
+      width: 100%;
+   }
+   .community-section__image {
+      grid-column: auto;
+      grid-row: auto;
+      max-width: 100%;
+      width: 100%;
+   }
+   .community-section__image img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+   }
+   .community-section__title {
+      font-size: 22px;
+      line-height: 1.25;
+      margin-bottom: 0;
+   }
+   .community-section__content {
+      grid-column: auto;
+      grid-row: auto;
+      width: 100%;
+   }
+   .community-section__grid {
+      position: static;
+      width: 100%;
+      gap: 28px;
+   }
+   .community-section__grid-column {
+      gap: 22px;
+   }
+   .community-card {
+      width: 100%;
+      max-width: none;
+   }
+   .community-card__title {
+      font-size: 15px;
+   }
+   .community-card__text {
+      max-width: none;
+      font-size: 13px;
+      line-height: 1.6;
+   }
+   .community-section__trial-link {
+      left: auto;
+      margin-top: 20px;
+      margin-inline: auto;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+   }
+   .community-section__link {
+      position: relative;
+      left: auto;
+   }
+}
