@@ -2,7 +2,6 @@
 
 /* Скидання стилів */
 @import url("../css/reset.css");
-@import url("../css/colors.css");
 
 html {
   scroll-behavior: smooth;
@@ -226,8 +225,12 @@ body {
    flex-direction: column;
 }
 
-.cosmetics__list li:not(:last-child) {
+/* .cosmetics__list li:not(:last-child) {
    padding-bottom: 24px;
+} */
+
+.cosmetics__list li {
+   padding: 12px 16px 10px;
 }
 
 .cosmetics__item {
@@ -235,7 +238,9 @@ body {
 }
 
 .cosmetics__item:hover {
+   /* text-decoration: underline; */
    border-bottom: 1px solid #000;
+
 }
 
 .cosmetics__gallery {
