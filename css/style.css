@@ -473,7 +473,7 @@ body {
 @media (max-width: 1399px) {
   .hero__article {
     padding-top: 260px;
-    padding-bottom: 250px;
+    padding-bottom: 30px;
   }
 }
 
@@ -497,6 +497,10 @@ body {
   .hero__article {
     padding-top: 18px;
   }
+  .hero__article-content {
+    padding-top: 35px;
+  }
+
 
   .hero__title {
     margin-bottom: 10px;
@@ -507,7 +511,7 @@ body {
   }
 
   .hero__actions {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     gap: 5px;
   }
@@ -515,6 +519,10 @@ body {
 
 @media (max-width: 480px) {
   .hero__article {
+    padding-top: 10px;
+  }
+
+  .hero__article-content {
     padding-top: 20px;
   }
 
@@ -524,8 +532,11 @@ body {
 }
 
 @media (max-width: 320px) {
+   .hero__article-content {
+      padding-top: 20px;
+   }
   .hero__article {
-    padding-top: 25px;
+    padding-top: 5px;
   }
 
   .hero__title {
@@ -533,12 +544,18 @@ body {
   }
 
   .hero__article-text {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     letter-spacing: 0.02em;
   }
 
   .hero__contact-phone {
     word-break: break-word;
+  }
+  .hero__actions {
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 5px;
+   padding-top: 30px;
   }
 }
 
@@ -632,7 +649,7 @@ body {
 @media (max-width: 1399px) {
   .about-top__container {
     gap: 72px;
-    padding-top: 104px;
+    /* padding-top: 104px; */
   }
 
   .about__stats {
@@ -644,7 +661,7 @@ body {
   .about-top__container {
     flex-direction: column;
     gap: 48px;
-    padding-top: 80px;
+    padding-top: 0px;
   }
 
   .about__stats {
@@ -659,7 +676,7 @@ body {
 
 @media (max-width: 767px) {
   .about-top__container {
-    padding-top: 56px;
+    padding-top: 0px;
   }
 
   .about__actions {
@@ -669,6 +686,11 @@ body {
 }
 
 @media (max-width: 480px) {
+   .about-top__container {
+      gap: 28px;
+      padding-top: 0px;
+    }
+
   .about__stat {
     flex-direction: column;
     align-items: flex-start;
@@ -679,7 +701,7 @@ body {
 @media (max-width: 320px) {
   .about-top__container {
     gap: 28px;
-    padding-top: 40px;
+    padding-top: 0px;
   }
 
   .about__stats {
